@@ -1,0 +1,61 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html class="dark" lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Portfolio de Jonathan Hernández" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+    <link rel="icon" href="/customFavicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css"
+    />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body
+    class="dark:text-zinc-300 dark:bg-zinc-950 bg-zinc-300 text-zinc-900 min-h-screen"
+  >
+    <Header />
+    <slot />
+    <Footer />
+  </body>
+</html>
+
+<style is:global>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+  header h2 {
+    opacity: 0;
+    animation: enhance-header linear both;
+    animation-timeline: scroll(root);
+    animation-range: 200px 300px;
+
+    @media (width < 640px) {
+      animation-range: 400px 500px;
+    }
+  }
+
+  @keyframes enhance-header {
+    to {
+      opacity: 1;
+    }
+  }
+  .from-camp {
+    outline: #7f1d1d dashed 1px;
+
+    &:focus {
+      outline: rgb(239 68 68) dotted 1px;
+    }
+  }
+</style>
