@@ -34,7 +34,8 @@ import Data from '../components/Data.astro';
             href="file/CV.pdf"
             target="_blank"
             class="hover:text-red-400 text-zinc-900 transition text-sm flex font-bold items-center gap-2 bg-zinc-600 py-1 px-4 rounded-full"
-            ><i class="fa-duotone fa-file-user text-2xl z-auto"></i>Resumen</a
+            ><i class="fa-duotone z-auto fa-file-user text-2xl"
+            ></i>Currículum</a
           >
           <article
             class="flex justify-center items-center gap-2 [&>a]:text-4xl [&>a]:text-zinc-600 hover:[&>a]:text-red-400 hover:[&>a]:transition-colors"
@@ -62,108 +63,6 @@ import Data from '../components/Data.astro';
       </div>
     </section>
     <hr class="mt-16 max-w-3xl m-auto border-zinc-500" />
-    <Section title="Educación">
-      <svg
-        slot="svg"
-        width="1em"
-        height="1em"
-        fill="currentColor"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 512 512"
-      >
-        <defs
-          ><style>
-            .fa-secondary {
-              opacity: 0.4;
-            }
-          </style></defs
-        ><path
-          class="fa-primary"
-          d="M331.2 146.9L322.7 96.24C321 86.05 324.3 75.66 331.6 68.36L382.8 17.16C390.1 9.036 404.7 11.86 409 22.53L432 80L489.5 102.1C500.1 107.3 502.1 121 494.8 129.2L443.6 180.4C436.3 187.7 425.9 190.1 415.8 189.3L365.1 180.8L272.1 272.1C263.6 282.3 248.4 282.3 239 272.1C229.7 263.6 229.7 248.4 239 239L331.2 146.9z"
-        ></path><path
-          class="fa-secondary"
-          d="M366.4 213.5L395 218.3C398.3 230.3 400 242.9 400 256C400 335.5 335.5 400 256 400C176.5 400 112 335.5 112 256C112 176.5 176.5 112 256 112C269.1 112 281.7 113.7 293.7 116.1L298.5 145.6L267.3 176.8C263.6 176.3 259.8 175.1 256 175.1C211.8 175.1 176 211.8 176 255.1C176 300.2 211.8 336 256 336C300.2 336 336 300.2 336 255.1C336 252.2 335.7 248.4 335.2 244.7L366.4 213.5zM497.7 171.5C506.1 197.1 512 226.4 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C285.6 0 314 5.024 340.5 14.27L288.1 66.67C277.6 64.91 266.9 64 256 64C149.1 64 64 149.1 64 256C64 362 149.1 448 256 448C362 448 448 362 448 256C448 245.1 447.1 234.4 445.3 223.9L497.7 171.5z"
-        ></path></svg
-      >
-
-      <Data
-        slot="data-01"
-        course="Jóvenes a Programar"
-        institute="Ceibal"
-        dates="Mar 2022 - 2023"
-      >
-        <ul
-          slot="learnings"
-          class="list-disc text-zinc-900 dark:text-zinc-300 pl-12 flex flex-col gap-2"
-        >
-          <li>
-            Desarrollo colaborativo de un e-commerce, utilizando HTML, CSS y
-            JavaScript.
-          </li>
-          <li>Implementación básica de Docker con PostgreSQL.</li>
-          <li>Consultas SQL básicas con NodeJS.</li>
-          <li>Diseño de UX/UI atractivas.</li>
-        </ul>
-      </Data>
-
-      <Data
-        slot="data-02"
-        course="Ingeniería en Computación "
-        institute="FING"
-        dates="Mar 2023 - Nov 2023"
-      >
-        <ul
-          slot="learnings"
-          class="text-zinc-900 dark:text-zinc-300 list-disc pl-12 flex flex-col gap-2"
-        >
-          <li>Resolución de problemas, y desarrollo de pensamiento crítico.</li>
-          <li>Fundamentos en ciencias de la computación.</li>
-        </ul>
-      </Data>
-    </Section>
-
-    <Section title="Experiencia">
-      <svg
-        slot="svg"
-        width="1em"
-        height="1em"
-        fill="currentColor"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 512 512"
-      >
-        <defs
-          ><style>
-            .fa-secondary {
-              opacity: 0.4;
-            }
-          </style></defs
-        ><path
-          class="fa-primary"
-          d="M464 96H384V48C384 22.41 361.6 0 336 0h-160C150.4 0 128 22.41 128 48V96H48C22.41 96 0 118.4 0 144V288h512V144C512 118.4 489.6 96 464 96zM336 96h-160V48h160V96z"
-        ></path><path
-          class="fa-secondary"
-          d="M320 336c0 8.844-7.156 16-16 16h-96C199.2 352 192 344.8 192 336V288H0v144C0 457.6 22.41 480 48 480h416c25.59 0 48-22.41 48-48V288h-192V336z"
-        ></path></svg
-      >
-
-      <Data
-        slot="data-01"
-        course="Fotógrafo "
-        institute="Freelance"
-        dates="Mar 2019 - Ene 2020"
-      >
-        <ul
-          slot="learnings"
-          class="list-disc text-zinc-900 dark:text-zinc-300 pl-12 flex flex-col gap-2"
-        >
-          <li>Comunicación y negociación con clientes.</li>
-          <li>Organización en la gestión del tiempo mediante Excel.</li>
-          <li>Creatividad al buscar la innovación en la fotografía.</li>
-        </ul>
-      </Data>
-      <Section />
-    </Section>
-
     <Section title="Proyectos">
       <svg
         slot="svg"
@@ -195,14 +94,20 @@ import Data from '../components/Data.astro';
         <div
           class="preview overflow-hidden flex relative items-center justify-center"
         >
-          <img
-            class="absolute object- rounded-2xl hover:scale-110 transition-transform"
-            src="img/preview.avif"
-          />
+          <a
+            target="blank"
+            href="https://tesla-landing-n4iken.vercel.app/"
+            class="absolute overflow-hidden"
+          >
+            <img
+              class="rounded-2xl hover:scale-110 transition-transform"
+              src="img/preview.avif"
+            />
+          </a>
         </div>
         <div class="flex gap-3 flex-col p-6">
           <h3 class="text-3xl font-bold text-red-500">Tesla Landing</h3>
-          <p class="text-lg">Landing page de Tesla 2023</p>
+          <p class="text-sm">Clon de la landing page de Tesla 2023.</p>
           <div
             class="flex items-center [&>span]:text-red-500 [&>span]:py-1 [&>span]:px-2 [&>span]:rounded-full [&>span]:text-xs [&>span]:font-bold gap-2 [&>span]:bg-red-950"
           >
@@ -213,6 +118,64 @@ import Data from '../components/Data.astro';
           </div>
         </div>
       </div>
+    </Section>
+    <Section title="Educación">
+      <svg
+        slot="svg"
+        width="1em"
+        height="1em"
+        fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 512 512"
+      >
+        <defs
+          ><style>
+            .fa-secondary {
+              opacity: 0.4;
+            }
+          </style></defs
+        ><path
+          class="fa-primary"
+          d="M331.2 146.9L322.7 96.24C321 86.05 324.3 75.66 331.6 68.36L382.8 17.16C390.1 9.036 404.7 11.86 409 22.53L432 80L489.5 102.1C500.1 107.3 502.1 121 494.8 129.2L443.6 180.4C436.3 187.7 425.9 190.1 415.8 189.3L365.1 180.8L272.1 272.1C263.6 282.3 248.4 282.3 239 272.1C229.7 263.6 229.7 248.4 239 239L331.2 146.9z"
+        ></path><path
+          class="fa-secondary"
+          d="M366.4 213.5L395 218.3C398.3 230.3 400 242.9 400 256C400 335.5 335.5 400 256 400C176.5 400 112 335.5 112 256C112 176.5 176.5 112 256 112C269.1 112 281.7 113.7 293.7 116.1L298.5 145.6L267.3 176.8C263.6 176.3 259.8 175.1 256 175.1C211.8 175.1 176 211.8 176 255.1C176 300.2 211.8 336 256 336C300.2 336 336 300.2 336 255.1C336 252.2 335.7 248.4 335.2 244.7L366.4 213.5zM497.7 171.5C506.1 197.1 512 226.4 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C285.6 0 314 5.024 340.5 14.27L288.1 66.67C277.6 64.91 266.9 64 256 64C149.1 64 64 149.1 64 256C64 362 149.1 448 256 448C362 448 448 362 448 256C448 245.1 447.1 234.4 445.3 223.9L497.7 171.5z"
+        ></path></svg
+      >
+
+      <Data
+        slot="data-01"
+        course="Licenciatura en TI"
+        institute="UTEC"
+        dates="Mar 2024 - actualidad"
+      >
+        <ul
+          slot="learnings"
+          class="list-disc text-zinc-900 dark:text-zinc-300 pl-12 flex flex-col gap-2"
+        >
+          <li>Caso de Estudio (cliente real)</li>
+          <li>Ingeniería de Requerimientos</li>
+          <li>Metodologías de Testing Funcional</li>
+          <li>Fundamentos de Programación (Java)</li>
+          <li>Diseño de Base de Datos</li>
+        </ul>
+      </Data>
+      <Data
+        slot="data-02"
+        course="Jóvenes a Programar"
+        institute="Ceibal"
+        dates="Mar 2023 - Dic 2023"
+      >
+        <ul
+          slot="learnings"
+          class="list-disc text-zinc-900 dark:text-zinc-300 pl-12 flex flex-col gap-2"
+        >
+          <li>Desarrollo colaborativo de un e-commerce (HTML - CSS - JS)</li>
+          <li>Implementación básica de Docker con PostgreSQL</li>
+          <li>Consultas SQL básicas con NodeJS</li>
+          <li>Diseño de UX/UI atractivas</li>
+        </ul>
+      </Data>
     </Section>
 
     <Section title="Contacto">
@@ -239,52 +202,45 @@ import Data from '../components/Data.astro';
         ></path></svg
       >
       <div slot="data-01" class="grid grid-cols-2">
-        <p class="">
-          Para contrataciones, colaboraciones o cualquier consulta, estamos a un
-          clic de distancia.
-        </p>
-        <article
-          class="bg-red-900 rounded-3xl p-5 flex flex-col font-bold text-lg [&>a]:font-thin"
-        >
-          <h3 class="flex items-center gap-2">
-            Redes Sociales <svg
-              width="1em"
-              height="1em"
-              fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 512 512"
-            >
-              <defs
-                ><style>
-                  .fa-secondary {
-                    opacity: 0.4;
-                  }
-                </style></defs
-              ><path
-                class="fa-primary"
-                d="M384 318.7c-18.1-3.825-32.01-19.18-32.01-38.43v-120.1c0-8.846-7.171-16.02-16.01-16.02l-31.98 .0036c-7.299 0-13.2 4.992-15.12 11.68C274.1 148.6 257.6 144.1 240 144.1c-61.86 0-112 50.2-112 112.1s50.13 112.1 111.1 112.1c26.44 0 50.43-9.544 69.59-24.88C327.1 366.3 353.7 381.7 384 384V318.7zM239.1 304.3c-26.47 0-48-21.56-48-48.05s21.53-48.05 48-48.05s48 21.56 48 48.05S266.5 304.3 239.1 304.3z"
-              ></path><path
-                class="fa-secondary"
-                d="M495.1 256.3v20.96c.0001 46.74-29.27 90.22-74.22 103C408.8 383.9 396.1 384.1 384 384v-65.31c2.672 .5651 5.164 1.621 7.1 1.621c22.06 0 40-17.96 40-40.05l0-16.16c.0001-91.97-67.02-174.3-158.6-183.2C168.6 70.76 79.1 153.4 79.1 256.3c0 87.88 64.61 160.9 148.8 174.1c15.62 2.441 27.24 15.5 27.24 31.31c-.0001 19.52-17.42 35.04-36.71 32.07c-130.2-20.08-226.1-145.2-198.5-285.9c18.34-93.45 93.57-168.8 187-187.1C361.2-9.332 495.1 107.1 495.1 256.3z"
-              ></path></svg
-            >
-          </h3>
-          <a href="#">LinkedIn <i class="fa-brands fa-linkedin"></i></a>
-          <a href="#" class="flex items-center gap-3"
-            >GitHub <i class="fa-brands fa-github"></i></a
+        <div class="flex flex-col gap-3">
+          <p>
+            Para contrataciones, colaboraciones o cualquier consulta, estamos a
+            un clic de distancia.
+          </p>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="mailto:n4iken@gmail.com"
+            id="button"
+            class="w-[50%] bg-zinc-950 dark:bg-zinc-300 font-bold dark:text-zinc-950 text-zinc-300 dark:hover:bg-red-500 hover:bg-red-900 transition-colors py-2 justify-center rounded-bl-3xl rounded-tr-3xl uppercase flex gap-3 items-center"
           >
-          <a href="#">Twitter <i class="fa-brands fa-x-twitter"></i></a>
-        </article>
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href="mailto:n4iken@gmail.com"
-          id="button"
-          class="w-[50%] bg-zinc-950 dark:bg-zinc-300 font-bold dark:text-zinc-950 text-zinc-300 dark:hover:bg-red-500 hover:bg-red-900 transition-colors py-2 justify-center rounded-bl-3xl rounded-tr-3xl uppercase flex gap-3 items-center"
-        >
-          Contáctame
-          <i class="fa-duotone fa-paper-plane-top"></i></a
-        >
+            Contáctame
+            <i class="fa-duotone fa-paper-plane-top"></i></a
+          >
+        </div>
+        <div class="flex flex-col gap-2">
+          <article class="bg-red-900 rounded-3xl p-4 flex items-center gap-2">
+            <span class="text-3xl">📱</span>
+            <div>
+              <h3 class="font-bold text-gray-200">Teléfono</h3>
+              <p class="text-sm text-gray-300">+598 92 812 433</p>
+            </div>
+          </article>
+          <article class="bg-red-900 rounded-3xl p-4 flex items-center gap-2">
+            <span class="text-3xl">🌎</span>
+            <div>
+              <h3 class="font-bold text-gray-200">Ubicacón</h3>
+              <p class="text-sm text-gray-300">Canelones - Uruguay</p>
+            </div>
+          </article>
+          <article class="bg-red-900 rounded-3xl p-4 flex items-center gap-2">
+            <span class="text-3xl">📧</span>
+            <div>
+              <h3 class="font-bold text-gray-200">Correo Electrónico</h3>
+              <p class="text-sm text-gray-300">n4iken@gmail.com</p>
+            </div>
+          </article>
+        </div>
       </div>
     </Section>
   </main>
